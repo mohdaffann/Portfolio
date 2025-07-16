@@ -45,7 +45,7 @@ function App() {
         <section id="about">
           <div className="flex flex-col items-center md:flex-row gap-8 mb-12">
             <img
-              src="/public/signature.png"
+              src="https://res.cloudinary.com/dfmtemqoz/image/upload/signature_uouv5g.png"
               alt="Profile"
               className="w-40 h-40  object-cover "
             />
