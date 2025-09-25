@@ -10,18 +10,36 @@ function ProjectCards() {
             Live: 'https://articulo.vercel.app',
             Git: 'https://github.com/mohdaffann',
             tech: ['React', 'Node', 'Zustand', 'React-Query', 'Express', 'MongoDb']
+        },
+        {
+            id: 2,
+            title: 'QueensGambit',
+            desc: 'A chess app built on top of socketio.Play real-time chess anonymously , without the hassle of logins or signups.Play across various time modes(rapid , blitz and bullet).Qiick join section by clicking a newly created game and joining the game.',
+            imageUrl: '/queensgambit.png',
+            Live: 'https://queensgambit-livid.vercel.app/',
+            Git: 'https://github.com/mohdaffann/queensgambit',
+            tech: ['React', 'Node', 'Socket.io', 'WebSockets', 'TailwindCSS', 'ChessJS']
+        },
+        {
+            id: 3,
+            title: 'editorjs-image-crop-resize',
+            desc: 'An open-source plugin for a rich WYSIWYG editor called editorJS.Integrated Cropperjs inside the image block of editorJS.Resize and crop image in the editor itself.Dynamic rotate and mirror flip(horizontal and vertical) the images.Reset the image to get back original image.',
+            imageUrl: 'editorjs.png',
+            Live: 'https://www.npmjs.com/package/editorjs-image-crop-resize',
+            Git: 'https://github.com/mohdaffann/editorjs-image-crop-resize',
+            tech: ['Rollup', 'CropperJS', 'EditorJS API', 'Vite', 'Core JavaScript']
         }
 
     ];
     return (
         <>
             {Projects.map((project) => (
-                <div className="flex flex-col md:flex-row gap-6 rounded-lg overflow-hidden shadow-md hover:shadow-lg bg-gray-50 max-w-5xl transition duration-200 ease-in-out">
+                <div className="flex flex-col md:flex-row gap-6 mb-4 rounded-lg overflow-hidden shadow-md hover:shadow-lg bg-gray-50 max-w-5xl transition duration-200 ease-in-out">
                     <div className="md:w-2/5 w-full h-full relative flex items-center justify-center">
                         <img src={project.imageUrl} className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
                         />
                     </div>
-                    <div className="md:w-3/5 p-4">
+                    <div className="md:w-3/5">
 
                         <div className="flex items-center justify-between">
                             <h2 className="text-2xl font-semibold mb-2">
@@ -45,11 +63,14 @@ function ProjectCards() {
 
                         </div>
                         {project.desc.split('.').map((line, ind) => (
-                            line && <p key={ind} className="text-[17px] text-gray-600">{line.trim()}</p>
+                            <div className="items-center justify-center">
+                                {line && <p key={ind} className="text-[17px] mb-2 text-gray-600">{line.trim()}</p>}
+                            </div>
+
                         ))}
-                        <div className="flex flex-wrap items-center gap-2 mt-2 ">
+                        <div className="flex flex-wrap items-center justify-center gap-2 mt-2 ">
                             {project.tech.map((tech) => (
-                                <span className="text-sm px-2 py-[3px] text-gray-600 bg-gray-200 rounded-md">{tech}</span>
+                                <span className="text-sm px-2 py-[3px] text-gray-600 mb-2 bg-gray-200 rounded-md">{tech}</span>
                             ))}
                         </div>
                     </div>
