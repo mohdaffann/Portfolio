@@ -42,9 +42,8 @@ function ProjectCards() {
                     <div className="md:w-3/5">
 
                         <div className="flex items-center justify-between">
-                            <h2 className="text-2xl font-semibold mb-2">
+                            <h2 className="text-base md:text-2xl font-semibold mb-2">
                                 {project.title}
-
                             </h2>
                             <div className="flex items-center space-x-1.5 ">
                                 <button className="bg-none flex items-center cursor-pointer hover:underline"
@@ -64,7 +63,7 @@ function ProjectCards() {
                         </div>
                         {project.desc.split('.').map((line, ind) => (
                             <div className="items-center justify-center">
-                                {line && <p key={ind} className="text-[17px] mb-2 text-gray-600">{line.trim()}</p>}
+                                {line && <p key={ind} className="text-sm md:text-base mb-2 text-gray-600">{line.trim()}</p>}
                             </div>
 
                         ))}
