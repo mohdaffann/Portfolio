@@ -28,6 +28,14 @@ function ProjectCards() {
             Live: 'https://www.npmjs.com/package/editorjs-image-crop-resize',
             Git: 'https://github.com/mohdaffann/editorjs-image-crop-resize',
             tech: ['Rollup', 'CropperJS', 'EditorJS API', 'Vite', 'Core JavaScript']
+        },
+        {
+            id: 4,
+            title: 'redis-job-queue',
+            desc: 'A queue-based job processor built on top of Redis, just like BullMQ.Implemented asynchronous job processing system using Redis lists for queues and hashes for metadata.Applied retry mechanism with exponential backoff algorithm with up to 3 maxRetries.Built fault-tolerant system, tracking job statuses and retry attempts with auto failure after maxRetries.',
+            imageUrl: 'redis.png',
+            Git: 'https://github.com/mohdaffann/redis-job-queue',
+            tech: ['Redis', 'Exponential-backoff', 'Lists', 'Hashes', 'queue']
         }
 
     ];
