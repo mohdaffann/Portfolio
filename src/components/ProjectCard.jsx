@@ -34,6 +34,7 @@ function ProjectCards() {
             title: 'redis-job-queue',
             desc: 'A queue-based job processor built on top of Redis, just like BullMQ.Implemented asynchronous job processing system using Redis lists for queues and hashes for metadata.Applied retry mechanism with exponential backoff algorithm with up to 3 maxRetries.Built fault-tolerant system, tracking job statuses and retry attempts with auto failure after maxRetries.',
             imageUrl: 'redis.png',
+            Live: 'https://github.com/mohdaffann/redis-job-queue',
             Git: 'https://github.com/mohdaffann/redis-job-queue',
             tech: ['Redis', 'Exponential-backoff', 'Lists', 'Hashes', 'queue']
         }
