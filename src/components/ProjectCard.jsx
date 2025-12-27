@@ -6,7 +6,7 @@ function ProjectCards() {
             id: 1,
             title: 'Articulo',
             desc: 'An end-to-end Article publishing application.Integrated rich text wysiwyg editor (EditorJs) with Image upload.Search,Filter and get Popular posts.Follow Users and Edit Account Details . Post , Edit and Modify comments.',
-            imageUrl: 'https://res.cloudinary.com/dfmtemqoz/image/upload/Articulo_l3l1dm.png',
+            imageUrl: '/articulo-new.png',
             Live: 'https://articulo.vercel.app',
             Git: 'https://github.com/mohdaffann',
             tech: ['React', 'Node', 'Zustand', 'React-Query', 'Express', 'MongoDb']
