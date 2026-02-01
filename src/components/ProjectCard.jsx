@@ -1,7 +1,15 @@
 
-
 function ProjectCards() {
     const Projects = [
+        {
+            id: 0,
+            title: 'Prcraft',
+            desc: 'An open-source AI powered CLI tool which generates GitHub PRs.Developed and published an npm package that analyzes git diffs and generates professional PR content using AI.Integrated Groq’s LLM API with custom prompts for brief, technical and detailed description styles.Implemented smart branch detection (upstream -> origin -> local fallback) and git operations with simple-git.10 extra lines added around the changed code for context awareness.Open-sourced project, publicly listed on npmjs (node package manager).',
+            imageUrl: '/primg.png',
+            Live: 'https://prcraft-site.vercel.app/',
+            Git: 'https://github.com/mohdaffann/prcraft',
+            tech: ['React', 'Node', 'Zustand', 'React-Query', 'Express', 'MongoDb']
+        },
         {
             id: 1,
             title: 'Articulo',
